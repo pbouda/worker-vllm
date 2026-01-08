@@ -15,9 +15,9 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 RUN python3 -m pip install vllm==0.12.0 
 
 # Setup for Option 2: Building the Image with the Model included
-ARG MODEL_NAME=""
+ARG MODEL_NAME="nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8"
 ARG TOKENIZER_NAME=""
-ARG BASE_PATH="/runpod-volume"
+ARG BASE_PATH="/models"
 ARG QUANTIZATION=""
 ARG MODEL_REVISION=""
 ARG TOKENIZER_REVISION=""
