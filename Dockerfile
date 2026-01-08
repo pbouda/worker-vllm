@@ -15,7 +15,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 RUN python3 -m pip install vllm==0.12.0 
 
 # Setup for Option 2: Building the Image with the Model included
-ARG MODEL_NAME="nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8"
+ARG MODEL_NAME="deepseek-ai/DeepSeek-OCR"
 ARG TOKENIZER_NAME=""
 ARG BASE_PATH="/models"
 ARG QUANTIZATION=""
